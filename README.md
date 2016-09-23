@@ -1,7 +1,10 @@
 # node-employee-crud
 Employee CRUD Operations With Nodejs and MongoDB
 
-# Local Evironment setup
+# If you are using this application then follow from (STEP 6)
+======================================================================================================
+
+# Local Evironment setup (SCRATCH)
 
 # Step 1 – Install Node.js
 Hit the [Node.js website](http://nodejs.org) and click the big green Install button.
@@ -50,3 +53,6 @@ Run commands:
 # Step 10 – Start App again
 Open a new cmd.exe
 Run command ** npm start **
+
+
+# Regards [Sam Mishra](mailto:samatwork14@gmail.com)
