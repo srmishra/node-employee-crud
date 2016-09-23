@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  table( align="center" )
+    tr
+      th( colspan="6", align="right" )
+        a(href="/employees/new")
+          i.fa.fa-edit
+          span= "Add New Employee"
+    tr
+      th= "Title"
+      th= "Name"
+      th= "Email"
+      th= "Phone"
+      th( colspan="2" )= "Actions"
+    - each employee, i in employees
+      tr
+        td= employee.title
+        td= employee.name
+        td
+          a(href="mailto:#{employee.email}")= employee.email
+        td= employee.phone
+        td( align="center" )
+          a(href="/employees/edit/#{employee._id}", title="Edit")
+            i(class="fa fa-edit")
+        td( align="center" )
+          a(href="/employees/delete/#{employee._id}", title="Delete", onclick="return confirm('Are you sure? you want to delete')")
+            i(class="fa fa-trash")

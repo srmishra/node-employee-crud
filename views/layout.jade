@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= "Employee CRUD Operations With Nodejs and MongoDB - By Sam Mishra"
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    center
+      div#header
+        div#content
+          label= "Employee CRUD Operations With Nodejs and MongoDB - By Sam Mishra"
+      div#body
+        div#content
+          != flash_messages('flash_messages_template', locals)
+          block content

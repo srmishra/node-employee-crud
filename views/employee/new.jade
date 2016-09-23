@@ -1,0 +1,27 @@
+extends ..\layout
+
+block content
+  form( method="post", action="")
+    table( align="center" )
+      tr
+        td( align="left" )
+          a(href="/")
+            i.fa.fa-backward
+            &nbsp; 
+            span= "Back to listing page"
+      tr
+        td
+          input( name="title", type="text", value="", placeholder="Title", required )
+      tr
+        td
+          input( name="name", type="text", value="", placeholder="Name", required )
+      tr
+        td
+          input( name="email", type="email", value="", placeholder="Email", required )
+      tr
+        td
+          input( name="phone", type="text", value="", placeholder="Phone", required )
+      tr
+        td( align="center" )
+          button( type="submit", name="btn-save" )
+            strong= "SAVE"
